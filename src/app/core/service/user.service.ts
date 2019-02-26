@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { User } from '../models/User';
+import { User } from '../../models/User';
 import {Observable, of } from 'rxjs';
 import {Router} from "@angular/router";
 
@@ -14,7 +14,7 @@ export class UserService {
     ];
   constructor(private http: HttpClient,private router: Router) {
    }
-  baseUrl: string = 'http://localhost:4200';
+
  
   getUsers() {
     return of(this.users);
