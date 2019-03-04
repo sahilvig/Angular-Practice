@@ -5,6 +5,8 @@
     Welcome to {{ title }}!
   </h1>
   <a  class="btn btn-success" [routerLink] = "['/list-user']" (click)="isTrue = true">Let's Start</a>
+  <br><br><button class="btn btn-success"  [routerLink]="['/orders']">Lazy Load Module</button>
   </div>
+  
   <router-outlet></router-outlet>
 <app-footer></app-footer>

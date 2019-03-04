@@ -8,6 +8,16 @@ const routes: Routes = [
   { path: 'add-user', component: CreateUserComponent },
   { path: 'list-user', component: ListUserComponent },
   { path: 'edit-user', component: UpdateUserComponent }
+  ,
+  {
+    path: 'orders',
+    loadChildren: './orders/orders.module#OrdersModule'
+  },
+  {
+    path: '',
+    redirectTo: '',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
